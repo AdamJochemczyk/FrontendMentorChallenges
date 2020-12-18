@@ -24,9 +24,8 @@ main{
 }
 .container{
   display: grid;
-  max-width: 1440px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(2,min-content);
   grid-gap: 30px 25px;
 }
 section{
@@ -104,4 +103,20 @@ grid-column: span 2;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+/*MEDIA QUERIES*/
+@media (max-width: 768px){
+  .container{
+    grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+    grid-template-rows: minmax(auto,auto);
+  }
+  .daniel{
+    grid-column: 1;
+  }
+  .patrick{
+    grid-column: 1;
+  }
+  .kira{
+    order: 1;
+  }
 }
