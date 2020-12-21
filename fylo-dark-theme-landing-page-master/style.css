@@ -1,0 +1,54 @@
+:root{
+    --dark-blue: hsl(217,28%,15%); /* intro email sing up background*/
+    --main-dark-blue: hsl(218,28%,13%); /*main background*/
+    --footer-dark-blue: hsl(216,53%,9%); /*footer background*/
+    --testimonials-dark-blue: hsl(219,30%,18%); /*testimonials dark blue*/
+    --cyan: hsl(176,68%,64%); /* inside call-to-action gradient*/
+    --blue: hsl(198,60%,50%); /*inside call-to-action gradient*/
+    --light-red: hsl(0,100%,63%); /*error*/
+    --white: hsl(0, 0%, 100%); /*neutral*/
+    font-size: 14px;
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*font-family: 'Raleway', sans-serif; headings call to actions header navigation*/
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav{
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+    background-color: var(--dark-blue);
+    width: 100%;
+    display: flex;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--white);
+}
+.nav__links{
+  align-self: center;
+  margin-left: auto;
+}
+.nav__link{
+  padding: 0 20px;
+}
+.nav__link:hover{
+  text-decoration: underline;
+}
+
+.hero{
+  background-color: var(--dark-blue);
+}
+
+
+/*frontend mentor styles*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
