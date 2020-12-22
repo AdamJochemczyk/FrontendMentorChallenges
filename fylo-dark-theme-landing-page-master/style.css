@@ -107,9 +107,46 @@ h1,a{
   grid-template-columns: 380px 380px;
   grid-template-rows: 1fr 1fr;
 }
-.features__title{
+.features__title--margin{
   margin: 1rem 0 .5rem 0;
 }
+/*PRODUCTIVE*/
+.productive{
+  display: flex;
+  background: var(--main-dark-blue);
+  color: var(--white);
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+}
+.productive__left{
+  flex-basis: 50%;
+}
+.productive__right{
+  margin-left: 10%;
+  flex-basis: 40%;
+}
+.productive__title{
+  font-size: 3.5rem;
+}
+.productive__description{
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+.productive__link{
+  color: var(--cyan);
+  border-bottom: solid 1px var(--cyan);
+  padding-bottom: 5px;
+}
+.productive__link:hover{
+  color: var(--white);
+  border-color: var(--white);
+}
+.productive__link:hover .arrow{
+  fill: var(--white);
+}
+/*TESTIMONIALS*/
+
 
 /*frontend mentor styles*/
 .attribution {

@@ -68,7 +68,7 @@
               />
               <h1 class="features__title">Access your files, anywhere</h1>
   
-              <p class="featres__description">
+              <p>
                 The ability to use a smartphone, tablet, or computer to access
                 your account means your files follow you everywhere.
               </p>
@@ -78,7 +78,7 @@
               <img src="./images/icon-security.svg" alt="trust security" />
               <h1 class="features__title">Security you can trust</h1>
   
-              <p class="featres__description">
+              <p>
                 2-factor authentication and user-controlled encryption are just a
                 couple of the security features we allow to help secure your
                 files.
@@ -92,7 +92,7 @@
               />
               <h1 class="features__title">Real-time collaboration</h1>
   
-              <p class="featres__description">
+              <p>
                 Securely share files and folders with friends, family and
                 colleagues for live collaboration. No email attachments required.
               </p>
@@ -100,9 +100,9 @@
   
             <div>
               <img src="./images/icon-any-file.svg" alt="store any file" />
-              <h1 class="features__title">Store any type of file</h1>
+              <h1 class="features__title--margin">Store any type of file</h1>
   
-              <p class="featres__description">
+              <p>
                 Whether you're sharing holidays photos or work documents, Fylo has
                 you covered allowing for all file types to be securely stored and
                 shared.
@@ -111,27 +111,68 @@
           </div>
         </section>
 
-        <section>
-          <div>
+        <section class="productive">
+          <div class="produvtive__left">
             <img
               src="./images/illustration-stay-productive.png"
               alt="stay productive"
             />
           </div>
-          <div>
-            <h1>Stay productive, wherever you are</h1>
+          <div class="productive__right">
+            <h1 class="productive__title">Stay productive, wherever you are</h1>
 
-            <p>
+            <p class="productive__description">
               Never let location be an issue when accessing your files. Fylo has
               you covered for all of your file storage needs.
             </p>
 
-            <p>
+            <p class="productive__description">
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachments required.
             </p>
 
-            <a href="#">See how Fylo works</a>
+             <a href="#" class="productive__link"
+                >See how Fylo works
+                <svg
+                  width="16"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <circle id="b" cx="6" cy="6" r="6" />
+                    <filter
+                      x="-25%"
+                      y="-25%"
+                      width="150%"
+                      height="150%"
+                      filterUnits="objectBoundingBox"
+                      id="a"
+                    >
+                      <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                      <feGaussianBlur
+                        stdDeviation="1"
+                        in="shadowOffsetOuter1"
+                        result="shadowBlurOuter1"
+                      />
+                      <feColorMatrix
+                        values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0"
+                        in="shadowBlurOuter1"
+                      />
+                    </filter>
+                  </defs>
+                  <g fill="none" fill-rule="evenodd">
+                    <g transform="translate(2 2)">
+                      <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                      <use fill="#62E0D9" xlink:href="#b" class="arrow" />
+                    </g>
+                    <path
+                      d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
+                      fill="#1B2330"
+                    />
+                  </g>
+                </svg>
+              </a>
           </div>
         </section>
 
