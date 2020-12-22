@@ -15,6 +15,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*NAV*/
 .nav{
     font-family: 'Raleway', sans-serif;
     padding: 20px;
@@ -40,7 +41,7 @@ h1,a{
 .nav__link:hover{
   text-decoration: underline;
 }
-
+/*HERO*/
 .hero{
   background-color: var(--dark-blue);
   background-size: contain;
@@ -79,7 +80,7 @@ h1,a{
   justify-content: center;
   margin-bottom: 150px;
 }
-.hero__btn{
+.call-to-action{
   display: block;
   background: linear-gradient(to left, var(--blue),var(--cyan));
   border-radius: 20px;
@@ -88,10 +89,27 @@ h1,a{
   margin-bottom: 1rem;
   width: 180px;
 }
-.hero__btn:hover{
+.call-to-action:hover{
   background: var(--cyan);
 }
-
+/*FEATURES*/
+.features{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-dark-blue);
+  color: var(--white);
+  text-align: center;
+}
+.features__container{
+  display: grid;
+  grid-gap: 100px 150px;
+  grid-template-columns: 380px 380px;
+  grid-template-rows: 1fr 1fr;
+}
+.features__title{
+  margin: 1rem 0 .5rem 0;
+}
 
 /*frontend mentor styles*/
 .attribution {
