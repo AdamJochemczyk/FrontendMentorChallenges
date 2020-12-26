@@ -28,6 +28,7 @@ a {
   color: var(--white);
 }
 h1,
+h2,
 a {
   font-family: "Raleway", sans-serif;
 }
@@ -73,12 +74,9 @@ a {
   margin-bottom: 150px;
 }
 .call-to-action {
-  display: block;
   background: linear-gradient(to left, var(--blue), var(--cyan));
   border-radius: 20px;
   padding: 10px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   width: 180px;
 }
 .call-to-action:hover {
@@ -168,25 +166,29 @@ a {
   padding: 2rem 0;
 }
 .form-control {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
-.earlyAccess__from [type="email"] {
+.earlyAccess__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.earlyAccess__form [type="email"] {
   border-radius: 50px;
   padding: 10px 20px;
   border: none;
   outline: none;
 }
 .earlyAccess__label {
-  position: absolute;
-  top: 40px;
-  left: -40px;
   color: var(--light-red);
   font-weight: 700;
   font-size: 0.75rem;
   opacity: 0;
+  margin-top: 0.5rem;
 }
-.earlyAccess__from [type="email"]:focus:invalid + .earlyAccess__label {
+.earlyAccess__form [type="email"]:focus:invalid + .earlyAccess__label {
   opacity: 1;
 }
 
@@ -194,7 +196,6 @@ a {
   border: none;
   color: var(--white);
   font-weight: 700;
-  margin-left: 0.5rem;
 }
 /*FOOTER*/
 .footer {
@@ -292,23 +293,27 @@ a {
     padding: 0 2rem 2rem 2rem;
   }
   .call-to-action--form {
-    margin-left: 65px;
-    width: 209px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    width: 196px;
+  }
+  .footer{
+        padding-top: 200px;
   }
   .footer__container {
     flex-direction: column;
   }
-  .footer__contact{
+  .footer__contact {
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
   .footer__location p {
     padding-left: 1.5rem;
   }
-  .footer__policy{
+  .footer__policy {
     margin-top: 2rem;
   }
-  .footer__media{
+  .footer__media {
     text-align: center;
     flex-basis: 100%;
   }
@@ -371,18 +376,15 @@ a {
   .earlyAccess__description {
     padding: 0 4rem 2rem 4rem;
   }
-  .earlyAccess__from [type="email"] {
+  .earlyAccess__form [type="email"] {
     width: 400px;
+  }
+  .call-to-action--form{
+    margin-left: 1rem;
+    height: 36px;
   }
   .form-control {
     margin-bottom: 2.5rem;
-  }
-  .earlyAccess__label {
-    width: 300px;
-  }
-  .call-to-action--form {
-    display: inline-block;
-    margin-left: 0.5rem;
   }
   .footer__location {
     flex-basis: 30%;
@@ -399,7 +401,7 @@ a {
   }
   .footer__policy {
     flex-basis: 10%;
-      margin-left: 5%;
+    margin-left: 5%;
   }
   .footer__media {
     flex-basis: 15%;
