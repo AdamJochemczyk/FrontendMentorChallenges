@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: solid 1px red;
 }
 *::before,*::after{
   background-repeat: no-repeat;
@@ -20,7 +21,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
-  font-weight: 700; /*nadmiarowe bo taka jest jedyna?*/
+  font-weight: 700;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -282,7 +283,7 @@ nav {
 
 /*Media*/
 /*mobile*/
-@media (max-width: 375px){
+@media (max-width: 376px){
   .startedForFreeBtn {
   width: 230px;
   padding: 10px 0;
@@ -390,10 +391,16 @@ font-size: 1.75rem;
   }
   .footer__right{
     flex-basis: 90%;
-    margin-left: 10%;
+    margin-left: 5%;
+  }
+  .input{
+    width: 320px;
+  }
+  .newsletter{
+    width: auto;
   }
   .submit{
     margin-top: 15px;
-    margin-left: 175px;
+    margin-left: 195px;
   }
 }
