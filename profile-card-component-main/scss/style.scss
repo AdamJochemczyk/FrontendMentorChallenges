@@ -1,0 +1,84 @@
+@import "_variables.scss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--dark-cyan);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -90% 220%, 150% -160%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+    background-color: #fff;
+    padding-top: 200px;
+    border-radius: 10px;
+    background-image: url("../images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+
+    &__info{
+        display: flex;
+        border-top: 1px solid var(--dark-gray);
+    }
+    &__person{
+        text-align: center;
+    }
+    .person{
+        position: absolute;
+        border: solid 3px #fff;
+        border-radius: 50%;
+        top: 20%;
+        left: 35%;
+    }
+    .age{
+        color: var(--dark-gray);
+        font-weight: 400;
+    }
+    .name{
+        font-size: 1rem;
+    }
+    .city{
+        margin-top: .5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--dark-gray);
+    }
+}
+.infoBox{
+    text-align: center;
+    padding: 1rem 1.5rem;
+
+    &__description{
+        color: var(--dark-gray);
+        margin-top: .5rem;
+        letter-spacing: 1.5px;
+        font-size: .5rem;
+    }
+}
+@media(max-width:728px){
+    body{
+          background-position: 125% 180%, -25% -80%;
+    }
+}
+
+
+
+
+/*Frontend mentor styles*/
+.attribution {
+    position: absolute;
+    bottom: 0; 
+    font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
